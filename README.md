@@ -42,3 +42,15 @@ irb -r ./lib/gilded_rose.rb
 ### Coverage 
 
 - include SimpleCov
+
+## Step 3 - Code refactoring
+
+### methods
+
+- functionality separation
+- private methods
+
+### condition
+
+- removal of stacked multi-conditioning 
+
