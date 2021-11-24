@@ -78,5 +78,22 @@ describe GildedRose do
       expect(items[8].sell_in).to eq(2)
       expect(items[8].quality).to eq(4)
     end
+
+    context 'update_quality#edge test' do
+      days = 10
+      gilded_rose = GildedRose.new items
+      (0...days).each do |day|
+        it "day #{day} edge test" do
+          expect(items[3].sell_in).to eq(0)
+          expect(items[3].quality).to eq(80)
+          expect(items[6].quality).to eq(50)
+          expect(items[7].quality).to eq(50)
+          gilded_rose.update_quality
+          next if day < 1
+
+          expect(items[8].quality).to eq(0)
+        end
+      end
+    end
   end
 end

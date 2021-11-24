@@ -54,3 +54,6 @@ irb -r ./lib/gilded_rose.rb
 
 - removal of stacked multi-conditioning 
 
+## Step 4 - Edge cases test
+
+- Add loop in to spec for edge cases

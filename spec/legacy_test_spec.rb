@@ -16,7 +16,7 @@ items = [
   Item.new(name = 'Conjured Mana Cake', sell_in = 3, quality = 6)
 ]
 
-days = 3
+days = 4
 
 gilded_rose = GildedRose.new items
 (0...days).each do |day|
